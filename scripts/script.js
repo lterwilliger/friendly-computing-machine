@@ -1,10 +1,5 @@
-// $ = jQuery's way of naming its stuff.
-// $( ... ) = what's inside () is the "object" we are messin with
-// .ready() = method of $jQ
-// .ready( ... ) = argument/parameter passed to that method
-// function(){} in the method is an IIFE = Immediately Invoked F/n Expresson
+// On page ready
 $(document).ready(function () {
-  // alert("page is ready");
   console.log("doc is ready");
     let $start_counter = $( "#event-start" ),
           // $drag_counter = $( "#event-drag" ),
@@ -20,12 +15,15 @@ function pickWowInt(min,max){
     return Math.floor(Math.random() * (max - min) + min);
 }
 Math.random();
-$( function() {
-    $( "#dogeDiv" ).draggable({ containment: "#dogeHouse", scroll: false });
-  } );
+$(function() {
+    $( "#dogeDiv" ).draggable(
+    {
+      containment: "#dogeHouse",
+      scroll: false
+    });
+  });
  $( "#dogeDiv" ).draggable(
 {
-//    containment: "#dogeHouse", scroll: false;
     start: function () {
         counts[0]++;
         //updateCounterStatus($start_counter, counts[0]);

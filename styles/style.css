@@ -16,6 +16,9 @@ body{
     width: auto;
     border-radius: 11%;
 } */
+#headRow{
+    color = black;
+}
 .card{
   margin-top:1rem;
 }
