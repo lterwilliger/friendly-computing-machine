@@ -16,9 +16,9 @@ body{
     width: auto;
     border-radius: 11%;
 } */
-#headRow{
-    color = black;
-}
+/*#headRow{*/
+/*    color = black;*/
+/*}*/
 .card{
   margin-top:1rem;
 }
@@ -51,6 +51,7 @@ body{
     color:black;
 }
 h3 {
-    color: black;
+    color: white;
     text-align:center;
+    background: black;
 }
